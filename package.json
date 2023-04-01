@@ -1,0 +1,28 @@
+{
+  "name": "bot-playground",
+  "version": "1.0.0",
+  "description": "",
+  "module": "true",
+  "main": "index.js",
+  "scripts": {
+    "demo": "node ./example/index.js",
+    "start": "ts-node-dev --exit-child --transpile-only --ignore-watch node_modules --respawn src/index.ts",
+    "gcp-build": "node node_modules/puppeteer/install.js",
+    "build": "tsc --build",
+    "test": "ts-node-dev */**.spec.ts"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "chromedriver": "^111.0.0",
+    "dotenv": "^16.0.3",
+    "selenium-webdriver": "^4.8.2",
+    "tesseract.js": "^4.0.3"
+  },
+  "devDependencies": {
+    "@types/selenium-webdriver": "^4.1.13",
+    "ts-node-dev": "^2.0.0",
+    "typescript": "^5.0.3"
+  }
+}
